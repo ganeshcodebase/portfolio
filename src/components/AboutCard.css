@@ -1,0 +1,13 @@
+.about-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 20px;
+  align-items: center;
+  gap: 5px;
+  border-radius: 10px;
+  box-shadow: -1px 0px 10px 0px rgba(156, 153, 156, 1);
+}
+.about-card-title {
+  font-weight: 500;
+}

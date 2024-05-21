@@ -1,0 +1,11 @@
+:root {
+  --main-font: "Poppins";
+  /* --text-color: white; */
+  --text-color: #303030;
+  --main-background-color: #fafafa;
+  --button-color: #323232;
+  --font-size: 16px;
+  --font-weight: 500;
+  --heading-font-size: 30px;
+  --heading-font-weight:600;
+}

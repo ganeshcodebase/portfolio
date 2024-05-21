@@ -1,0 +1,22 @@
+.contact-card-container {
+  margin: auto;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-left-card-container{
+  width: 50%;
+}
+.contact-card-container .contact-heading,.contact-right-card-container .contanct-heading{
+  font-size: 25px;
+  text-align: center;
+  padding: 40px 0px;
+  font-weight: 500;
+}
+.contact-right-card-container{
+  width: 50%;
+}
+.contact-send-button{
+  margin-left: 11%;
+}

@@ -1,0 +1,12 @@
+.page-heading{
+    font-size: var(--heading-font-size);
+    font-weight: var(--heading-font-weight);
+}
+.page-heding-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-top: 5vh;
+}

@@ -1,0 +1,40 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  line-height: 60px;
+}
+.nav-bar nav {
+  display: flex;
+  gap: 25px;
+}
+.nav-bar nav li {
+  list-style-type: none;
+}
+.nav-bar nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+}
+.nav-bar .logo a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  /* .nav-bar nav {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        position: fixed;
+        bottom: 0;
+        gap: 2rem;
+    } */
+  /* Your CSS styles for mobile devices go here */
+}
+
+/* For tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Your CSS styles for tablet devices go here */
+}

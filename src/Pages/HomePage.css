@@ -1,0 +1,254 @@
+.banner {
+  width: 100%;
+  height: calc(100vh - 60px);
+  /* background-color: red; */
+  padding-top: 10.5rem;
+  position: relative;
+}
+.banner-wrapper-herosection {
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  justify-content: space-between;
+}
+.banner-wrapper-social-media {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 20vh;
+  gap: 20px;
+}
+.banner-wrapper-social-media img {
+  width: 25px;
+}
+
+.banner-wrapper-herosection {
+  display: flex;
+}
+.banner-wrapper-image {
+  height: 20px;
+  width: 40px;
+}
+.banner-data {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  width: 50%;
+  gap: 20px;
+}
+.banner-data a {
+  text-decoration: none;
+}
+.banner-title {
+  font-size: 55px;
+  font-weight: bold;
+}
+.designation-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.line {
+  content: "";
+  height: 1px;
+  width: 50px;
+  background-color: black;
+}
+.banner-designation {
+  font-size: 25px;
+  font-weight: 600;
+}
+.banner-about {
+  font-size: 20px;
+}
+.banner-wrapper-image {
+  background-image: url("../Assets/Images/profile-1.jpg");
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 30%);
+  order: 1;
+  animation: profile_animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile_animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.scrolling_text {
+  overflow-x: hidden;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.text {
+  font-size: 250px;
+  font-weight: 700;
+  -webkit-text-fill-color: #c7c8cc;
+  text-transform: uppercase;
+  /* -webkit-text-stroke: 1px gray; */
+  animation: animate_text 30s linear infinite;
+}
+.text span {
+  margin: 0 40px;
+}
+
+@keyframes animate_text {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-80%, 0, 0);
+  }
+}
+
+.scroll {
+  cursor: pointer;
+  z-index: 3;
+  position: absolute;
+  bottom: 25px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.scroll:hover {
+  transform: scale(1.1);
+}
+.scroll a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: red;
+  }
+  .text {
+    display: none;
+  }
+  .scroll {
+    display: none;
+  }
+  .banner {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .banner-wrapper-herosection {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .banner-wrapper-social-media {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 6vh;
+    gap: 20px;
+    left: 20px;
+  }
+  .banner-wrapper-social-media img {
+    width: 20px;
+  }
+  .banner-title {
+    font-size: 21px;
+    margin-top: 10px;
+  }
+  .banner-designation {
+    font-size: 16px;
+  }
+  .banner-about {
+    font-size: 12px;
+  }
+  .banner-wrapper-image {
+    height: 200px;
+    width: 200px;
+    margin-left: 60px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    background-color: yellow;
+  }
+  .text {
+    display: none;
+  }
+  .scroll {
+    display: none;
+  }
+  .banner {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .banner-wrapper-herosection {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .banner-wrapper-social-media {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 6vh;
+    gap: 20px;
+    left: 20px;
+  }
+  .banner-wrapper-social-media img {
+    width: 20px;
+  }
+  .banner-title {
+    font-size: 21px;
+    margin-top: 10px;
+  }
+  .banner-designation {
+    font-size: 16px;
+  }
+  .banner-about {
+    font-size: 12px;
+  }
+  .banner-wrapper-image {
+    height: 200px;
+    width: 200px;
+    margin-left: 60px;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body {
+    background-color: green;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  body {
+    background-color: white;
+  }
+}

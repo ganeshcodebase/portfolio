@@ -1,0 +1,48 @@
+.projects_container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.projects_container button {
+  border: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  color: var(--button-color);
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.projects_container .active {
+  background-color: var(--button-color);
+  color: white;
+}
+.button-transition {
+  transition: background-color 0.3s ease-in-out;
+}
+.button-slider {
+  animation: slide 0.5s forwards;
+}
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.projects_data {
+  overflow: hidden;
+  margin-top: 10px;
+  height: 650px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
