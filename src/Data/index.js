@@ -13,6 +13,10 @@ import Linkedin from "../Assets/Images/LinkedIn.svg";
 import LinkedinImg from "../Assets/Images/linkedin.svg";
 import Instagram from "../Assets/Images/instagram.svg";
 import Github from "../Assets/Images/github.svg";
+import Cifar from "../Assets/Images/cifar-10.png";
+import Face from "../Assets/Images/data.jpg";
+import AI from "../Assets/Images/ai.png";
+
 export const HomePageData = {
   name: "Ganesh Guntuku",
   designation: "Full stack Developer",
@@ -189,10 +193,10 @@ export const ProjectsPageData = {
           demo: "https://ganeshs170220.github.io/Static-Website-Eduford-/",
         },
         {
-          name: "sparks foundation Payment Gateway Integration",
-          image: Sfoundation,
-          url: "https://github.com/Ganeshs170220/Sparks-foundation-internship-payment-gateway-integration",
-          demo: "https://ganeshs170220.github.io/Sparks-foundation-internship-payment-gateway-integration/",
+          name: "AI Models on Question and answer Generation",
+          image: AI,
+          url: "https://github.com/Ganeshs170220/AI-MODELS",
+          demo: "",
         },
       ],
     },
@@ -230,8 +234,27 @@ export const ProjectsPageData = {
       // children: [{ name: "", image: "", url: "s", demo: "" }],
     },
     {
-      name: "ML",
-      // children: [{ name: "", image: "", url: "s", demo: "" }],
+      name: "AI/ML",
+      children: [
+        {
+          name: "Image detection Using ML on Cifar 10 Dataset",
+          image: Cifar,
+          url: "https://github.com/Ganeshs170220/Machine-Learning-project-on-CNN-Cifar10-Dataset",
+          demo: "",
+        },
+        {
+          name: "Realtime Face Expression Recognition Using ML",
+          image: Face,
+          url: "https://github.com/Ganeshs170220/Realtime-Face-Expression-Recognition-using-CNN_ML",
+          demo: "",
+        },
+        {
+          name: "AI Models on Question and answer Generation",
+          image: AI,
+          url: "https://github.com/Ganeshs170220/AI-MODELS",
+          demo: "",
+        },
+      ],
     },
   ],
 };
