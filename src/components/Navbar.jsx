@@ -14,18 +14,9 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        closeMenu();
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  const handleItemClick = () => {
+    closeMenu();
+  };
 
   return (
     <div className="nav-bar">
@@ -37,7 +28,7 @@ const Navbar = () => {
       </div>
       <nav ref={menuRef} className={isMenuOpen ? "open" : ""}>
         {menu.map((item, index) => (
-          <li key={index} onClick={closeMenu}>
+          <li key={index} onClick={handleItemClick}>
             <a href={item === "Home" ? "/" : `#${item.toLowerCase()}`}>
               {item}
             </a>
