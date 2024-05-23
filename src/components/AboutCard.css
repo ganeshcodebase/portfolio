@@ -11,3 +11,38 @@
 .about-card-title {
   font-weight: 500;
 }
+/* Media Query for Mobile */
+@media (max-width: 480px) {
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    box-shadow: -1px 0px 10px 0px rgba(156, 153, 156, 1);
+    width: 100px;
+  }
+  .about-card-title {
+    font-weight: 500;
+    font-size: 10px;
+  }
+  .exp {
+    font-size: 10px;
+  }
+}
+/* Media Query for Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding:30px;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    box-shadow: -1px 0px 10px 0px rgba(156, 153, 156, 1);
+    margin-top: 20px;
+  }
+}

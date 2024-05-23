@@ -37,3 +37,27 @@
 .input-fields {
   text-align: center;
 }
+/* Media Query for Mobile */
+@media (max-width: 480px) {
+  .card-container .name {
+    font-size: 13px;
+  }
+  .card-container .value {
+    font-size: 10px;
+  }
+  .card-container .sendbutton{
+    font-size: 10px;
+  }
+}
+/* Media Query for Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .card-container .name {
+    font-size: 20px;
+  }
+  .card-container .value {
+    font-size: 16px;
+  }
+  .card-container .sendbutton{
+    font-size: 15px;
+  }
+}

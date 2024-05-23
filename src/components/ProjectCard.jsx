@@ -7,7 +7,7 @@ const ProjectCard = ({ name, image, url, demo }) => {
     <div className="project-card-container">
       <div className="project-card">
         <div className="project-card-image">
-          <img src={image} width={410} height={215} />
+          <img src={image} />
         </div>
       </div>
       <div className="project-card-data">{name}</div>

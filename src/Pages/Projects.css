@@ -40,9 +40,24 @@
 .projects_data {
   overflow: hidden;
   margin-top: 10px;
-  height: 650px;
+  height: fit-content;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 480px) {
+  .projects_data {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+/* Media Query for Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .projects_data {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }

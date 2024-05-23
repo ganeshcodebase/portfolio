@@ -1,39 +1,41 @@
-html{
+html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-section{
+section {
   height: 100vh;
   scroll-snap-align: center;
 }
-/* body{
-  background-color: #0c0c1d;
-  color: lightgray;
-} */
 
 body {
   color: var(--text-color);
   font-family: var(--main-font);
   background-color: var(--main-background-color);
 }
-.container{
+.container {
   width: 70%;
   margin: auto;
 }
 
+/* Media Query for Mobile */
 @media (max-width: 480px) {
-  .container{
-    width: 100%;
-    /* margin:0px; */
+  .container {
+    width: 90%;
+  }
+  section {
+    height: max-content;
+    scroll-snap-align: unset;
   }
 }
-@media (min-width: 481px) and (max-width: 767px) {
-  .container{
-    width: 100%;
+/* Media Query for Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 1024px) {
+  section {
+    height: max-content;
+    scroll-snap-align: unset;
   }
 }

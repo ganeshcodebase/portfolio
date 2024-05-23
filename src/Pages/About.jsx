@@ -7,7 +7,7 @@ import Button from "../components/Button";
 import Doc from "../Assets/Images/doc.svg";
 const About = () => {
   return (
-    <div className="about">
+    <div className="about container">
       <PageHeading heading={AboutPageData.heading} desc={AboutPageData.desc} />
       <div className="about-container">
         <div className="about-image-section">

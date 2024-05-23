@@ -12,6 +12,7 @@
   background-color: #ffffff;
   padding: 20px;
   font-weight: bold;
+  max-height: 500px;
 }
 .skills-page-card-section {
   display: flex;
@@ -31,4 +32,42 @@
 .skills-page-card-section .title {
   display: flex;
   align-items: center;
+}
+/* Media Query for Mobile */
+@media (max-width: 480px) {
+  .skills-page-card-container {
+    flex-direction: column;
+  }
+  .skills-page-card {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  .skills-page-card-section .desc {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .skills-page-card > .title {
+    font-size: 18px;
+  }
+  .skills-page-card-section .title {
+    font-size: 14px;
+  }
+}
+/* Media Query for Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .skills-page-card-container {
+    flex-direction: column;
+  }
+  .skills-page-card {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  .skills-page-card-section .desc {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 14px;
+  }
 }

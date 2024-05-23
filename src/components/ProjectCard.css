@@ -1,10 +1,11 @@
 .project-card-container {
   width: 35%;
-  max-height: 310px;
+  height: fit-content;
   background-color: #fbfbfb;
   box-shadow: -1px 0px 10px 0px rgba(156, 153, 156, 1);
   border-radius: 10px;
   margin: 10px;
+  padding-bottom: 10px;
 }
 
 .project-card {
@@ -18,6 +19,10 @@
 }
 .project-card-image {
   margin: 10px 0px;
+}
+.project-card-image img {
+  width: 410px;
+  height: 215px;
 }
 .project-card-data {
   padding-left: 25px;
@@ -42,4 +47,29 @@
 .project-card-button a {
   text-decoration: none;
   color: white;
+}
+/* Media Query for Mobile */
+@media (max-width: 480px) {
+  .project-card-container {
+    height: fit-content;
+    width: 96%;
+  }
+  .project-card-image img {
+    width: 300px;
+    height: 180px;
+  }
+}
+/* Media Query for Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .project-card-container {
+    height: fit-content;
+    width: 96%;
+  }
+  .project-card {
+    height: 250px;
+  }
+  .project-card-image img {
+    width: 480px;
+    height: 250px;
+  }
 }

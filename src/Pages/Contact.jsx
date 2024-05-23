@@ -46,6 +46,7 @@ const Contact = () => {
       window.location.href = mailtoLink;
     }
   };
+  const currentYear = new Date().getFullYear();
 
   return (
     <div>
@@ -72,7 +73,16 @@ const Contact = () => {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1, width: "50ch" },
+                "& .MuiTextField-root": {
+                  m: 1,
+                  width: "50ch",
+                  "@media (max-width: 768px)": {
+                    width: "35ch",
+                  },
+                  "@media (max-width: 480px)": {
+                    width: "30ch",
+                  },
+                },
               }}
               noValidate
               autoComplete="off"
@@ -115,13 +125,7 @@ const Contact = () => {
                   errors.project ? "Project description is required" : ""
                 }
               />
-              <div
-                style={{
-                  textAlign: "left",
-                  marginLeft: "11%",
-                  marginTop: "10px",
-                }}
-              >
+              <div className="contact-send-button">
                 <MuiButton
                   type="submit"
                   variant="contained"
@@ -141,6 +145,12 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <footer className="footer">
+        <div className="container">
+          <p>&copy; {currentYear} Portfolio. All Rights Reserved.</p>
+          <p> Made with &#9829;	 by Ganesh Guntuku.</p>
+        </div>
+      </footer>
     </div>
   );
 };
