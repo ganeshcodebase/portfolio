@@ -3,9 +3,14 @@ import PageHeading from "../components/PageHeading";
 import "./About.css";
 import { AboutPageData } from "../Data/index";
 import AboutCard from "../components/AboutCard";
-import Button from "../components/Button";
 import Doc from "../Assets/Images/doc.svg";
 const About = () => {
+  const handleDownloadCV = () => {
+    const url = AboutPageData.buttonUrl;
+    if (url) {
+      window.open(url, "_blank");
+    }
+  };
   return (
     <div className="about container">
       <PageHeading heading={AboutPageData.heading} desc={AboutPageData.desc} />
@@ -23,7 +28,12 @@ const About = () => {
           </div>
           <div className="about-content">{AboutPageData.description}</div>
           <div>
-            <Button text={AboutPageData.buttonText} Img={Doc} />
+            <div className="button-container">
+              <button onClick={() => handleDownloadCV()}>
+                <span>{AboutPageData.buttonText}</span>
+                {Doc && <img src={Doc} alt="icon" width={20} />}
+              </button>
+            </div>
           </div>
         </div>
       </div>

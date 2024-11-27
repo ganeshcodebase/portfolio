@@ -45,6 +45,7 @@ export const AboutPageData = {
   description:
     "Full stack developer, I create web pages with UI ? UX user interface, I have years of experience and many clients are happy with the projects carried out.",
   buttonText: "Download CV",
+  buttonUrl: "https://drive.google.com/file/d/1GwcikHkVkWVaox7AW7EsrkU5JdX1HM-0/view?usp=sharing"
 };
 
 export const SkillsPageData = {
