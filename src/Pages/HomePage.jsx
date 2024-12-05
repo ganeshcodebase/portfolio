@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-
+import { motion } from "motion/react";
 import { HomePageData } from "../Data";
 import "../Pages/HomePage.css";
 import Button from "../components/Button";
@@ -14,26 +14,57 @@ const HomePage = () => {
         <Navbar />
         <div className="banner container">
           <div className="banner-wrapper-herosection">
-            <div className="banner-wrapper-social-media">
+            <motion.div
+              initial={{ x: -100 }}
+              animate={{ x: 0 }}
+              transition={{ duration: 1 }}
+              className="banner-wrapper-social-media"
+            >
               {HomePageData.data.map((item) => (
-                <>
+                <motion.div whileHover={{ scale: 1.2 }}>
                   <a href={item.url} target="_blank" rel="noopener noreferrer">
                     <img src={item.img} alt="LinkedIn" />
                   </a>
-                </>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
             <div className="banner-data">
-              <div className="banner-title">{HomePageData.name} 👋</div>
-              <div className="designation-container">
+              <motion.div
+                initial={{ y: 100 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 1 }}
+                className="banner-title"
+              >
+                {HomePageData.name} 👋
+              </motion.div>
+              <motion.div
+                initial={{ y: 100 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 1 }}
+                className="designation-container"
+              >
                 <span className="line"></span>
                 <span className="banner-designation">
                   {HomePageData.designation}
                 </span>
-              </div>
-              <div className="banner-about">{HomePageData.about}</div>
+              </motion.div>
+              <motion.div
+                initial={{ y: 100 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 1 }}
+                className="banner-about"
+              >
+                {HomePageData.about}
+              </motion.div>
               <a href="#contact">
-                <Button text={HomePageData.buttonText} Img={Send} />
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  initial={{ y: 100 }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 1 }}
+                >
+                  <Button text={HomePageData.buttonText} Img={Send} />
+                </motion.div>
               </a>
               <div className="scroll">
                 <a href="#about">
@@ -47,7 +78,12 @@ const HomePage = () => {
                 </a>
               </div>
             </div>
-            <div className="banner-wrapper-image"></div>
+            <motion.div
+              initial={{ x: 100 }}
+              animate={{ x: 0 }}
+              transition={{ duration: 1 }}
+              className="banner-wrapper-image"
+            ></motion.div>
           </div>
         </div>
       </div>

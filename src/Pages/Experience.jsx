@@ -17,13 +17,13 @@ const Experience = () => {
       <div>
         <VerticalTimeline lineColor="black">
           {ExperiencePageData &&
-            ExperiencePageData.data.map((item,index) => (
+            ExperiencePageData.data.map((item, index) => (
               <VerticalTimelineElement
-              key={index}
+                key={index}
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: "#c7c8cc", color: "black" }}
+                contentStyle={{ background: "#EEEEEE", color: "black" }}
                 contentArrowStyle={{
-                  borderRight: "7px solid #c7c8cc",
+                  borderRight: "7px solid" + item.color,
                 }}
                 date={item.date}
                 iconStyle={{
@@ -34,13 +34,13 @@ const Experience = () => {
                 }}
                 icon={<img src={item.image} width={25} alt="icon" />}
               >
-                <h3 className="vertical-timeline-element-title">
+                <div style={{fontSize:'20px'}} className="vertical-timeline-element-title">
                   {item.heading}
-                </h3>
-                <h4 className="vertical-timeline-element-subtitle">
+                </div>
+                <div style={{fontSize:'16px'}} className="vertical-timeline-element-subtitle">
                   {item.sub_heading}
-                </h4>
-                <p>{item.skills}</p>
+                </div>
+                <div style={{marginTop:'10px'}}>{item.skills}</div>
               </VerticalTimelineElement>
             ))}
         </VerticalTimeline>

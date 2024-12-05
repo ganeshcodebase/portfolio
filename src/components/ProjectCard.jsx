@@ -1,6 +1,5 @@
 import React from "react";
 import "./ProjectCard.css";
-// import Imag from "../Assets/Images/p1.png";
 
 const ProjectCard = ({ name, image, url, demo }) => {
   return (

@@ -5,6 +5,7 @@ import "./Contact.css";
 import ContactCard from "../components/ContactCard";
 import Send from "../Assets/Images/send.svg";
 import { Box, TextField, Button as MuiButton } from "@mui/material";
+import { motion } from "motion/react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -55,7 +56,13 @@ const Contact = () => {
         desc={ContactPageData.desc}
       />
       <div className="contact-card-container">
-        <div className="contact-left-card-container">
+        <motion.div
+          initial={{ opacity: 0, x: -150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ amount: 0.3 }}
+          transition={{ duration: 1 }}
+          className="contact-left-card-container"
+        >
           <div className="contact-heading">{ContactPageData.left_title}</div>
           <div
             style={{
@@ -66,8 +73,14 @@ const Contact = () => {
           >
             <ContactCard data={ContactPageData} />
           </div>
-        </div>
-        <div className="contact-right-card-container">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ amount: 0.3 }}
+          transition={{ duration: 1 }}
+          className="contact-right-card-container"
+        >
           <div className="contanct-heading">{ContactPageData.right_title}</div>
           <div className="input-fields">
             <Box
@@ -143,12 +156,12 @@ const Contact = () => {
               </div>
             </Box>
           </div>
-        </div>
+        </motion.div>
       </div>
       <footer className="footer">
         <div className="container">
           <p>&copy; {currentYear} Portfolio. All Rights Reserved.</p>
-          <p> Made with &#9829;	 by Ganesh Guntuku.</p>
+          <p> Made with &#9829; by Ganesh Guntuku.</p>
         </div>
       </footer>
     </div>

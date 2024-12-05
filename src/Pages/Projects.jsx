@@ -3,6 +3,8 @@ import { ProjectsPageData } from "../Data";
 import PageHeading from "../components/PageHeading";
 import "./Projects.css";
 import ProjectCard from "../components/ProjectCard";
+import { motion } from "motion/react";
+
 const Projects = () => {
   const [activeSection, setActiveSection] = useState("All");
 
@@ -15,7 +17,13 @@ const Projects = () => {
         heading={ProjectsPageData.heading}
         desc={ProjectsPageData.desc}
       />
-      <div className="projects_container">
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ amount: 0.3 }}
+        transition={{ duration: 1 }}
+        className="projects_container"
+      >
         {ProjectsPageData &&
           ProjectsPageData.sections?.map((item) => (
             <button
@@ -28,15 +36,20 @@ const Projects = () => {
               {item.name}
             </button>
           ))}
-      </div>
-      <div className="projects_data">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ amount: 0.3 }}
+        transition={{ duration: 1 }}
+        className="projects_data"
+      >
         {ProjectsPageData.sections?.map((section) => {
           if (section.name === activeSection) {
             return (
               <React.Fragment key={section.name}>
                 {section.children?.length > 0 &&
                   section.children?.map((item, index) => {
-                    // Pass multiple data to ProjectCard component as props
                     return (
                       <ProjectCard
                         key={index}
@@ -52,7 +65,7 @@ const Projects = () => {
           }
           return null;
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };

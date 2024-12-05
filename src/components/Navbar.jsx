@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
   return (
     <div className="nav-bar">
       <div className="logo">
-        <a href="/">Portfolio.</a>
+        <a href="/">Ganesh</a>
       </div>
       <div className="hamburger" onClick={toggleMenu}>
         {isMenuOpen ? "✖" : "☰"}
@@ -29,9 +30,14 @@ const Navbar = () => {
       <nav ref={menuRef} className={isMenuOpen ? "open" : ""}>
         {menu.map((item, index) => (
           <li key={index} onClick={handleItemClick}>
-            <a href={item === "Home" ? "/" : `#${item.toLowerCase()}`}>
-              {item}
-            </a>
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <a
+                whileHover={{ scale: 1.2 }}
+                href={item === "Home" ? "/" : `#${item.toLowerCase()}`}
+              >
+                {item}
+              </a>
+            </motion.div>
           </li>
         ))}
       </nav>

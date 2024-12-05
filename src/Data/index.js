@@ -9,7 +9,7 @@ import Sfoundation from "../Assets/Images/p3.png";
 import OLMS from "../Assets/Images/p4.png";
 import WhatsApp from "../Assets/Images/WhatsApp.svg";
 import SendMail from "../Assets/Images/Send Email.svg";
-import Linkedin from "../Assets/Images/LinkedIn.svg";
+import Linkedin from "../Assets/Images/linkedIn-dark.svg";
 import LinkedinImg from "../Assets/Images/linkedin.svg";
 import Instagram from "../Assets/Images/instagram.svg";
 import Github from "../Assets/Images/github.svg";
@@ -19,11 +19,11 @@ import AI from "../Assets/Images/ai.png";
 
 export const HomePageData = {
   name: "Ganesh Guntuku",
-  designation: "Full stack Developer",
+  designation: "Software Engineer",
   about:
-    "I like to craft solid and scalable fullstack products with great user experiences.",
+    "I specialize in crafting scalable full-stack applications with seamless and engaging user experiences.",
   buttonText: "Say Hello",
-  scroll: "I'm Full stack Developer",
+  scroll: "I'm Software Engineer",
   scrollDown: "Scroll Down",
   data: [
     {
@@ -38,14 +38,15 @@ export const AboutPageData = {
   heading: "About Me",
   desc: "My Introduction",
   data: [
-    { name: "Experience", exp: "1 + Years", img: ExpImg },
-    { name: "Completed", exp: "5 + Projects", img: Suitcase },
+    { name: "Experience", exp: "1.6+ Years", img: ExpImg },
+    { name: "Completed", exp: "5+ Projects", img: Suitcase },
     { name: "Support", exp: "Online 24/7", img: HeadSet },
   ],
   description:
-    "Full stack developer, I create web pages with UI ? UX user interface, I have years of experience and many clients are happy with the projects carried out.",
+    "Dynamic Software Engineer with 1.6 years of experience in designing, developing, and deploying web applications. Skilled in modern technologies like React, Redux, Frappe Framework, ERPNext, and RESTful APIs to create scalable solutions. Proficient in translating business needs into technical outcomes, ensuring high-quality software delivery. Motivated to work on innovative projects that enhance growth and efficiency.",
   buttonText: "Download CV",
-  buttonUrl: "https://drive.google.com/file/d/1GwcikHkVkWVaox7AW7EsrkU5JdX1HM-0/view?usp=sharing"
+  buttonUrl:
+    "https://drive.google.com/file/d/1GwcikHkVkWVaox7AW7EsrkU5JdX1HM-0/view?usp=sharing",
 };
 
 export const SkillsPageData = {
@@ -53,7 +54,7 @@ export const SkillsPageData = {
   desc: "My Technical level",
   data: [
     {
-      name: "Frontend developer",
+      name: "Frontend Development & Libraries",
       skills: [
         { name: "HTML", desc: "Advanced" },
         { name: "CSS", desc: "Advanced" },
@@ -63,21 +64,23 @@ export const SkillsPageData = {
         { name: "Sagas", desc: "Intermediate" },
         { name: "Bootstrap", desc: "Intermediate" },
         { name: "MUI", desc: "Intermediate" },
-        { name: "Git", desc: "Intermediate" },
-        { name: "GitHub", desc: "Intermediate" },
+        { name: "Framer Motion", desc: "Intermediate" },
+        { name: "REST API", desc: "Intermediate" },
       ],
     },
     {
-      name: "Backend developer",
+      name: "Backend Development & Tools",
       skills: [
         { name: "Python", desc: "Intermediate" },
         { name: "Frappe", desc: "Intermediate" },
         { name: "ERPNext", desc: "Intermediate" },
-        { name: "NodeJS", desc: "Intermediate" },
-        { name: "ExpressJS", desc: "Intermediate" },
-        { name: "MongonDB", desc: "Intermediate" },
         { name: "MySQL", desc: "Intermediate" },
+        { name: "Mariadb", desc: "Intermediate" },
         { name: "SQL", desc: "Intermediate" },
+        { name: "Docker", desc: "Intermediate" },
+        { name: "Nginx", desc: "Intermediate" },
+        { name: "Git", desc: "Intermediate" },
+        { name: "GitHub", desc: "Intermediate" },
       ],
     },
   ],
@@ -88,7 +91,7 @@ export const ExperiencePageData = {
   desc: "My Personal Journey",
   data: [
     {
-      heading: "FullStack Developer",
+      heading: "Software Engineer",
       sub_heading: "Easy Cloud Software Solutions",
       skills: ["Web Developement,", " Project Management,", " Team Management"],
       image: Business,
@@ -110,7 +113,6 @@ export const ExperiencePageData = {
         "HTML,",
         " CSS,",
         " JavaScript,",
-        " React JS,",
         " Payment Gateway Integration",
       ],
       image: Business,
@@ -230,10 +232,10 @@ export const ProjectsPageData = {
         },
       ],
     },
-    {
-      name: "App",
-      // children: [{ name: "", image: "", url: "s", demo: "" }],
-    },
+    // {
+    // name: "App",
+    // children: [{ name: "", image: "", url: "s", demo: "" }],
+    // },
     {
       name: "AI/ML",
       children: [
@@ -266,14 +268,14 @@ export const ContactPageData = {
   left_title: "Talk to me",
   right_title: "Write me your project",
   buttonText: "Send Message",
-  buttonValue: "ganesh@moneybloom.in",
+  buttonValue: "ganeshguntuku.dev@gmail.com",
   data: [
     {
       icon: SendMail,
       name: "Email",
-      value: "ganesh@moneybloom.in",
+      value: "ganeshguntuku.dev@gmail.com",
       button: "Write me",
-      send: "ganesh@moneybloom.in",
+      send: "ganeshguntuku.dev@gmail.com",
     },
     {
       icon: WhatsApp,

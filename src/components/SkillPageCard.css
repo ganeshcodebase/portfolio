@@ -32,6 +32,8 @@
 .skills-page-card-section .title {
   display: flex;
   align-items: center;
+  text-wrap: nowrap;
+
 }
 /* Media Query for Mobile */
 @media (max-width: 480px) {
