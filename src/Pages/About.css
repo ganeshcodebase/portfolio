@@ -39,6 +39,7 @@
 }
 .about-content {
   margin-top: 20px;
+  text-align: justify;
 }
 
 /* Media Query for Mobile */
