@@ -26,6 +26,7 @@ body {
 @media (max-width: 480px) {
   .container {
     width: 90%;
+    overflow-x: hidden;
   }
   section {
     height: max-content;
@@ -34,6 +35,10 @@ body {
 }
 /* Media Query for Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    overflow-x: hidden;
+  }
   section {
     height: max-content;
     scroll-snap-align: unset;
