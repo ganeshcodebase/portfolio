@@ -39,6 +39,9 @@
 }
 /* Media Query for Mobile */
 @media (max-width: 480px) {
+  .card-container{
+    width: 80%;
+  }
   .card-container .name {
     font-size: 13px;
   }
@@ -51,6 +54,9 @@
 }
 /* Media Query for Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 1024px) {
+  .card-container{
+    width: 80%;
+  }
   .card-container .name {
     font-size: 20px;
   }
