@@ -7,6 +7,7 @@ import Skills from "./Pages/Skills";
 import Experience from "./Pages/Experience";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 const App = () => {
   useEffect(() => {
     document.addEventListener("contextmenu", (e) => e.preventDefault());
@@ -31,6 +32,7 @@ const App = () => {
   }, []);
   return (
     <>
+      <ScrollToTopButton />
       <section id="/">
         <HomePage />
       </section>
