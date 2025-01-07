@@ -19,11 +19,11 @@ import AI from "../Assets/Images/ai.png";
 
 export const HomePageData = {
   name: "Ganesh Guntuku",
-  designation: "Software Engineer",
+  designation: "Software Developer",
   about:
     "I specialize in crafting scalable full-stack applications with seamless and engaging user experiences.",
   buttonText: "Say Hello",
-  scroll: "I'm Software Engineer",
+  scroll: "I'm Software Developer",
   scrollDown: "Scroll Down",
   data: [
     {
@@ -43,7 +43,7 @@ export const AboutPageData = {
     { name: "Support", exp: "Online 24/7", img: HeadSet },
   ],
   description:
-    "Dynamic Software Engineer with 1.6 years of experience in designing, developing, and deploying web applications. Skilled in modern technologies like React, Redux, Frappe Framework, ERPNext, and RESTful APIs to create scalable solutions. Proficient in translating business needs into technical outcomes, ensuring high-quality software delivery. Motivated to work on innovative projects that enhance growth and efficiency.",
+    "Dynamic Software Developer with 1.6 years of experience in designing, developing, and deploying web applications. Skilled in modern technologies like React, Redux, Frappe Framework, ERPNext, and RESTful APIs to create scalable solutions. Proficient in translating business needs into technical outcomes, ensuring high-quality software delivery. Motivated to work on innovative projects that enhance growth and efficiency.",
   buttonText: "Download CV",
   buttonUrl:
     "https://drive.google.com/file/d/1GwcikHkVkWVaox7AW7EsrkU5JdX1HM-0/view?usp=sharing",
@@ -91,7 +91,7 @@ export const ExperiencePageData = {
   desc: "My Personal Journey",
   data: [
     {
-      heading: "Software Engineer",
+      heading: "Software Developer",
       sub_heading: "Easy Cloud Software Solutions",
       skills: ["Web Developement,", " Project Management,", " Team Management"],
       image: Business,
